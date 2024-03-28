@@ -1,4 +1,4 @@
-# amazon_clone
+# ShopSphere
 
 A new Flutter project.
 
