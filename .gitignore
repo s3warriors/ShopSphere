@@ -45,4 +45,5 @@ app.*.map.json
 
 serve/.env
 Dump
-screenshot.png
+README.md
+screensot.png
