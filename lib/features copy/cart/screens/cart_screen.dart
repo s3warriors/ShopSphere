@@ -1,11 +1,11 @@
-import 'package:amazon_clone/common/widgets/custom_button.dart';
-import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/features copy/address/screens/address_screen.dart';
-import 'package:amazon_clone/features copy/cart/widgets/cart_product.dart';
-import 'package:amazon_clone/features copy/cart/widgets/cart_subtotal.dart';
-import 'package:amazon_clone/features copy/home/widgets/address_box.dart';
-import 'package:amazon_clone/features copy/search/screens/search_screen.dart';
-import 'package:amazon_clone/providers/user_provider.dart';
+import 'package:ShopSphere/common/widgets/custom_button.dart';
+import 'package:ShopSphere/constants/global_variables.dart';
+import 'package:ShopSphere/features copy/address/screens/address_screen.dart';
+import 'package:ShopSphere/features copy/cart/widgets/cart_product.dart';
+import 'package:ShopSphere/features copy/cart/widgets/cart_subtotal.dart';
+import 'package:ShopSphere/features copy/home/widgets/address_box.dart';
+import 'package:ShopSphere/features copy/search/screens/search_screen.dart';
+import 'package:ShopSphere/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -92,7 +92,7 @@ class _CartScreenState extends State<CartScreen> {
                             width: 1,
                           ),
                         ),
-                        hintText: 'Search Amazon.in',
+                        hintText: 'Search ShopSphere.in',
                         hintStyle: const TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 17,
@@ -146,5 +146,3 @@ class _CartScreenState extends State<CartScreen> {
     );
   }
 }
-
-

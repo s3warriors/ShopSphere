@@ -1,7 +1,7 @@
-// import 'package:amazon_clone/constants/global_variables.dart';
-// import 'package:amazon_clone/Features/admin/screens/analtyics_screen.dart';
-// import 'package:amazon_clone/Features/admin/screens/orders_screen.dart';
-// import 'package:amazon_clone/Features/admin/screens/posts_screen.dart';
+// import 'package:ShopSphere/constants/global_variables.dart';
+// import 'package:ShopSphere/Features/admin/screens/analtyics_screen.dart';
+// import 'package:ShopSphere/Features/admin/screens/orders_screen.dart';
+// import 'package:ShopSphere/Features/admin/screens/posts_screen.dart';
 // import 'package:flutter/material.dart';
 
 // class AdminScreen extends StatefulWidget {
@@ -45,7 +45,7 @@
 //               Container(
 //                 alignment: Alignment.topLeft,
 //                 child: Image.asset(
-//                   'assets/images/amazon_in.png',
+//                   'assets/images/ShopSphere_in.png',
 //                   width: 120,
 //                   height: 45,
 //                   color: Colors.black,

@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:unique_simple_bar_chart/data_models.dart';
 import 'package:unique_simple_bar_chart/simple_bar_chart.dart';
 
-import 'package:amazon_clone/features copy/admin/models/sales.dart';
+import 'package:ShopSphere/features copy/admin/models/sales.dart';
 
 class CategoryProductsChart extends StatelessWidget {
   List<Sales>? earnings;
-  
-   CategoryProductsChart({
+
+  CategoryProductsChart({
     Key? key,
     required this.earnings,
   }) : super(key: key);
@@ -18,19 +18,22 @@ class CategoryProductsChart extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: SimpleBarChart(
-          
           // fullBarChartHeight: 430,
 
           makeItDouble: true,
-          listOfHorizontalBarData:earnings!.map((e) =>
-            HorizontalDetailsModel(name: e.label, color: Colors.blue, size: double.parse(((e.earning)%14999).toString()),
-            ),
-          ).toList(),
-        
+          listOfHorizontalBarData: earnings!
+              .map(
+                (e) => HorizontalDetailsModel(
+                  name: e.label,
+                  color: Colors.blue,
+                  size: double.parse(((e.earning) % 14999).toString()),
+                ),
+              )
+              .toList(),
+
           verticalInterval: 5000,
         ),
       ),

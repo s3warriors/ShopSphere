@@ -1,9 +1,9 @@
-import 'package:amazon_clone/common/widgets/loader.dart';
-import 'package:amazon_clone/constants/global_variables.dart';
-// import 'package:amazon_clone/features copy/account/services/account_services.dart';
-// import 'package:amazon_clone/features copy/account/widgets/single_product.dart';
-// import 'package:amazon_clone/features copy/order_details/screens/order_details.dart';
-import 'package:amazon_clone/models/order.dart';
+import 'package:ShopSphere/common/widgets/loader.dart';
+// import 'package:ShopSphere/constants/global_variables.dart';
+// import 'package:ShopSphere/features copy/account/services/account_services.dart';
+// import 'package:ShopSphere/features copy/account/widgets/single_product.dart';
+// import 'package:ShopSphere/features copy/order_details/screens/order_details.dart';
+import 'package:ShopSphere/models/order.dart';
 import 'package:flutter/material.dart';
 
 import '../../order_details/screens/order_details.dart';
@@ -40,18 +40,16 @@ class _OrdersState extends State<Orders> {
 
   @override
   Widget build(BuildContext context) {
-    return 
-    orders == null
+    return orders == null
         ? const Loader()
-        : 
-        Column(
+        : Column(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
                     padding: const EdgeInsets.only(
-                      left: 15,
+                      left: 10,
                     ),
                     child: const Text(
                       'Your Orders',
@@ -61,20 +59,21 @@ class _OrdersState extends State<Orders> {
                       ),
                     ),
                   ),
-                  Container(
-                    padding: const EdgeInsets.only(
-                      right: 15,
-                    ),
-                    child: Text(
-                      'See all',
-                      style: TextStyle(
-                        color: GlobalVariables.selectedNavBarColor,
-                      ),
-                    ),
-                  ),
+                  // Container(
+                  //   padding: const EdgeInsets.only(
+                  //     right: 15,
+                  //   ),
+                  //   child: Text(
+                  //     'See all',
+                  //     style: TextStyle(
+                  //       color: GlobalVariables.selectedNavBarColor,
+                  //     ),
+                  //   ),
+                  // ),
                 ],
               ),
               // display orders
+              // if(orders!.isEmpty) Center(child: Text("No Orders....Order Something"),),
               Container(
                 height: 170,
                 padding: const EdgeInsets.only(
@@ -82,23 +81,21 @@ class _OrdersState extends State<Orders> {
                   top: 20,
                   right: 0,
                 ),
-                child: ListView.builder(
+                child: (orders!.isEmpty)?Center(child: Text("No Orders....Order Something", style: TextStyle(fontSize: 16 ,fontWeight: FontWeight.bold),),):ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: orders!.length,
                   itemBuilder: (context, index) {
-                    return
-                        GestureDetector(
-                                onTap: () {
-                                  Navigator.pushNamed(
-                                    context,
-                                    OrderDetailScreen.routeName,
-                                    arguments: orders![index],
-                                  );
-                                },
-                                child:
-                        SingleProduct(
-                      // image: orders[index],
-                      image: orders![index].products[0].images[0],
+                    return GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(
+                          context,
+                          OrderDetailScreen.routeName,
+                          arguments: orders![index],
+                        );
+                      },
+                      child: SingleProduct(
+                        // image: orders[index],
+                        image: orders![index].products[0].images[0],
                       ),
                     );
                   },

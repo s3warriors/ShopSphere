@@ -1,6 +1,6 @@
-// import 'package:amazon_clone/Features/account/services/account_services.dart';
-// import 'package:amazon_clone/Features/account/widgets/account_button.dart';
-// import 'package:amazon_clone/Features/account/widgets/orders.dart';
+// import 'package:ShopSphere/Features/account/services/account_services.dart';
+// import 'package:ShopSphere/Features/account/widgets/account_button.dart';
+// import 'package:ShopSphere/Features/account/widgets/orders.dart';
 // import 'package:flutter/material.dart';
 
 // class TopButtons extends StatelessWidget {

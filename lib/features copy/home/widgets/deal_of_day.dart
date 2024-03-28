@@ -1,7 +1,7 @@
-import 'package:amazon_clone/common/widgets/loader.dart';
-import 'package:amazon_clone/features copy/home/services/home_services.dart';
-import 'package:amazon_clone/features copy/product_details/screens/product_details_screen.dart';
-import 'package:amazon_clone/models/product.dart';
+import 'package:ShopSphere/common/widgets/loader.dart';
+import 'package:ShopSphere/features copy/home/services/home_services.dart';
+import 'package:ShopSphere/features copy/product_details/screens/product_details_screen.dart';
+import 'package:ShopSphere/models/product.dart';
 import 'package:flutter/material.dart';
 
 class DealOfDay extends StatefulWidget {
@@ -36,13 +36,11 @@ class _DealOfDayState extends State<DealOfDay> {
 
   @override
   Widget build(BuildContext context) {
-    return 
-    product == null
+    return product == null
         ? const Loader()
         : product!.name.isEmpty
             ? const SizedBox()
-            : 
-            GestureDetector(
+            : GestureDetector(
                 onTap: navigateToDetailScreen,
                 child: Column(
                   children: [
@@ -62,8 +60,8 @@ class _DealOfDayState extends State<DealOfDay> {
                     Container(
                       padding: const EdgeInsets.only(left: 15),
                       alignment: Alignment.topLeft,
-                      child: const Text(
-                        '\$100',
+                      child: Text(
+                        product!.price.toString(),
                         style: TextStyle(fontSize: 18),
                       ),
                     ),
@@ -71,8 +69,8 @@ class _DealOfDayState extends State<DealOfDay> {
                       alignment: Alignment.topLeft,
                       padding:
                           const EdgeInsets.only(left: 15, top: 5, right: 40),
-                      child: const Text(
-                        'Rivaan',
+                      child: Text(
+                        product!.name,
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                       ),

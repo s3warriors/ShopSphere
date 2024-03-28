@@ -2,6 +2,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const adminRouter = require("./routes/admin");
+const dotenv = require("dotenv").config();
 
 // IMPORTS FROM OTHER FILES
 const authRouter = require("./routes/auth"); 
@@ -10,11 +11,10 @@ const userRouter = require("./routes/user");
 
 
 // INIT
-const PORT =  3000;
-// const PORT = process.env.PORT || 3000;
+// const PORT =  3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
-const DB =
-  "mongodb+srv://satveer:satveer123@cluster0.qnccxhc.mongodb.net/?retryWrites=true&w=majority";
+const DB = process.env.MONGO;
 
 // middleware -> basically used to manipulate the data
 app.use(express.json());
@@ -27,6 +27,7 @@ app.use(userRouter);
 mongoose
   .connect(DB)
   .then(() => {
+    
     console.log("Connection Successful");
   })
   .catch((e) => {

@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:amazon_clone/constants/error_handling.dart';
-import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/constants/utils.dart';
-import 'package:amazon_clone/features copy/admin/models/sales.dart';
-import 'package:amazon_clone/models/order.dart';
-import 'package:amazon_clone/models/product.dart';
-import 'package:amazon_clone/providers/user_provider.dart';
+import 'package:ShopSphere/constants/error_handling.dart';
+import 'package:ShopSphere/constants/global_variables.dart';
+import 'package:ShopSphere/constants/utils.dart';
+import 'package:ShopSphere/features copy/admin/models/sales.dart';
+import 'package:ShopSphere/models/order.dart';
+import 'package:ShopSphere/models/product.dart';
+import 'package:ShopSphere/providers/user_provider.dart';
 import 'package:cloudinary_public/cloudinary_public.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -61,7 +61,6 @@ class AdminServices {
         onSuccess: () {
           showSnackBar(context, 'Product Added Successfully!');
           Navigator.pop(context);
-          
         },
       );
     } catch (e) {
@@ -214,9 +213,9 @@ class AdminServices {
           totalEarning = response['totalEarnings'];
           sales = [
             Sales('Mobiles', response['mobileEarnings']),
-            Sales('Essentials', response['essentialEarnings']),
+            Sales('grocery', response['essentialEarnings']),
             Sales('Books', response['booksEarnings']),
-            Sales('Appliances', response['applianceEarnings']),
+            Sales('electronics', response['applianceEarnings']),
             Sales('Fashion', response['fashionEarnings']),
           ];
         },

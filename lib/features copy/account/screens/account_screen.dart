@@ -1,11 +1,10 @@
-
-
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 import '../../../constants/global_variables.dart';
+import '../widgets/Buttons.dart';
 import '../widgets/below_app_bar.dart';
 import '../widgets/orders.dart';
 import '../widgets/top_buttons.dart';
@@ -30,10 +29,11 @@ class AccountScreen extends StatelessWidget {
               Container(
                 alignment: Alignment.topLeft,
                 child: Image.asset(
-                  'assets/images/amazon_in.png',
-                  width: 120,
-                  height: 45,
-                  color: Colors.black,
+                  'assets/images/ShopSphere_in.png',
+                  fit: BoxFit.fill,
+                  width: 80,
+                  height: 40,
+                  // color: Colors.black,
                 ),
               ),
               Container(
@@ -57,11 +57,13 @@ class AccountScreen extends StatelessWidget {
       ),
       body: Column(
         children: const [
+          SizedBox(height: 20),
           BelowAppBar(),
           SizedBox(height: 10),
-          TopButtons(),
-          SizedBox(height: 20),
           Orders(),
+          // TopButtons(),
+          // Buttons(),
+          // SizedBox(height: 20),
         ],
       ),
     );

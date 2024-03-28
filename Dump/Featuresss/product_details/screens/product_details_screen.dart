@@ -1,13 +1,13 @@
-// import 'package:amazon_clone/common/widgets/custom_button.dart';
-// import 'package:amazon_clone/common/widgets/stars.dart';
-// import 'package:amazon_clone/Features/product_details/services/product_details_services.dart';
-// import 'package:amazon_clone/providers/user_provider.dart';
+// import 'package:ShopSphere/common/widgets/custom_button.dart';
+// import 'package:ShopSphere/common/widgets/stars.dart';
+// import 'package:ShopSphere/Features/product_details/services/product_details_services.dart';
+// import 'package:ShopSphere/providers/user_provider.dart';
 // import 'package:carousel_slider/carousel_slider.dart';
 // import 'package:flutter/material.dart';
 
-// import 'package:amazon_clone/constants/global_variables.dart';
-// import 'package:amazon_clone/Features/search/screens/search_screen.dart';
-// import 'package:amazon_clone/models/product.dart';
+// import 'package:ShopSphere/constants/global_variables.dart';
+// import 'package:ShopSphere/Features/search/screens/search_screen.dart';
+// import 'package:ShopSphere/models/product.dart';
 // import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 // import 'package:provider/provider.dart';
 
@@ -114,7 +114,7 @@
 //                             width: 1,
 //                           ),
 //                         ),
-//                         hintText: 'Search Amazon.in',
+//                         hintText: 'Search ShopSphere.in',
 //                         hintStyle: const TextStyle(
 //                           fontWeight: FontWeight.w500,
 //                           fontSize: 17,

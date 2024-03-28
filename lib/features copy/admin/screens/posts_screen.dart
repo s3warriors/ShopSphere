@@ -1,8 +1,8 @@
-import 'package:amazon_clone/common/widgets/loader.dart';
-import 'package:amazon_clone/features copy/account/widgets/single_product.dart';
-import 'package:amazon_clone/features copy/admin/screens/add_product_screen.dart';
-import 'package:amazon_clone/features copy/admin/services/admin_services.dart';
-import 'package:amazon_clone/models/product.dart';
+import 'package:ShopSphere/common/widgets/loader.dart';
+import 'package:ShopSphere/features copy/account/widgets/single_product.dart';
+import 'package:ShopSphere/features copy/admin/screens/add_product_screen.dart';
+import 'package:ShopSphere/features copy/admin/services/admin_services.dart';
+import 'package:ShopSphere/models/product.dart';
 import 'package:flutter/material.dart';
 
 class PostsScreen extends StatefulWidget {
@@ -40,7 +40,7 @@ class _PostsScreenState extends State<PostsScreen> {
 
   void navigateToAddProduct() {
     Navigator.pushNamed(context, AddProductScreen.routeName).then((value) {
-      fetchAllProducts();  //after popping this screen.....our products should get updated
+      fetchAllProducts(); //after popping this screen.....our products should get updated
     });
   }
 
@@ -58,10 +58,12 @@ class _PostsScreenState extends State<PostsScreen> {
                 final productData = products![index];
                 return Column(
                   children: [
+                    Padding(padding: EdgeInsets.only(top:10)),
                     SizedBox(
-                      height: 140,
+                      height: 130,
                       child: SingleProduct(
                         image: productData.images[0],
+
                       ),
                     ),
                     Row(

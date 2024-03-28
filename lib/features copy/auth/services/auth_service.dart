@@ -2,12 +2,12 @@
 
 import 'dart:convert';
 
-import 'package:amazon_clone/common/widgets/bottom_bar.dart';
-import 'package:amazon_clone/constants/error_handling.dart';
-import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/constants/utils.dart';
-import 'package:amazon_clone/models/user.dart';
-import 'package:amazon_clone/providers/user_provider.dart';
+import 'package:ShopSphere/common/widgets/bottom_bar.dart';
+import 'package:ShopSphere/constants/error_handling.dart';
+import 'package:ShopSphere/constants/global_variables.dart';
+import 'package:ShopSphere/constants/utils.dart';
+import 'package:ShopSphere/models/user.dart';
+import 'package:ShopSphere/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:provider/provider.dart';
@@ -24,7 +24,7 @@ class AuthService {
     required String name,
   }) async {
     try {
-  // print('im here');
+      // print('im here');
       User user = User(
         id: '',
         name: name,
@@ -42,11 +42,11 @@ class AuthService {
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8',
           "Access-Control-Allow-Origin": "*",
-    'Access-Control-Allow-Headers':
-        'Origin, Content-Type, Cookie, X-CSRF-TOKEN, Accept, Authorization, X-XSRF-TOKEN, Access-Control-Allow-Origin',
-    'Access-Control-Expose-Headers': "" 'Authorization, authenticated',
-    'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
-    'Access-Control-Allow-Credentials': 'true',
+          'Access-Control-Allow-Headers':
+              'Origin, Content-Type, Cookie, X-CSRF-TOKEN, Accept, Authorization, X-XSRF-TOKEN, Access-Control-Allow-Origin',
+          'Access-Control-Expose-Headers': "" 'Authorization, authenticated',
+          'Access-Control-Allow-Methods': 'GET,POST,OPTIONS,DELETE,PUT',
+          'Access-Control-Allow-Credentials': 'true',
         },
       );
 
@@ -95,7 +95,7 @@ class AuthService {
           Navigator.pushNamedAndRemoveUntil(
             context,
             BottomBar.routeName,
-          //  HomeScreen.routeName,
+            //  HomeScreen.routeName,
             (route) => false,
           );
         },

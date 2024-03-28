@@ -1,7 +1,7 @@
-// import 'package:amazon_clone/common/widgets/custom_button.dart';
-// import 'package:amazon_clone/common/widgets/custom_textfield.dart';
-// import 'package:amazon_clone/constants/global_variables.dart';
-// import 'package:amazon_clone/Features/auth/services/auth_service.dart';
+// import 'package:ShopSphere/common/widgets/custom_button.dart';
+// import 'package:ShopSphere/common/widgets/custom_textfield.dart';
+// import 'package:ShopSphere/constants/global_variables.dart';
+// import 'package:ShopSphere/Features/auth/services/auth_service.dart';
 // import 'package:flutter/material.dart';
 
 // enum Auth {

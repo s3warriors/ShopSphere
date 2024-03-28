@@ -80,8 +80,8 @@ adminRouter.get("/admin/analytics", admin, async (req, res) => {
     }
     // CATEGORY WISE ORDER FETCHING
     let mobileEarnings = await fetchCategoryWiseProduct("Mobiles");
-    let essentialEarnings = await fetchCategoryWiseProduct("Essentials");
-    let applianceEarnings = await fetchCategoryWiseProduct("Appliances");
+    let essentialEarnings = await fetchCategoryWiseProduct("grocery");
+    let applianceEarnings = await fetchCategoryWiseProduct("electronics");
     let booksEarnings = await fetchCategoryWiseProduct("Books");
     let fashionEarnings = await fetchCategoryWiseProduct("Fashion");
 

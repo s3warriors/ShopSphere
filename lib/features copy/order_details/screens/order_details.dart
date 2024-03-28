@@ -1,9 +1,9 @@
-import 'package:amazon_clone/common/widgets/custom_button.dart';
-import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/features copy/admin/services/admin_services.dart';
-import 'package:amazon_clone/features copy/search/screens/search_screen.dart';
-import 'package:amazon_clone/models/order.dart';
-import 'package:amazon_clone/providers/user_provider.dart';
+import 'package:ShopSphere/common/widgets/custom_button.dart';
+import 'package:ShopSphere/constants/global_variables.dart';
+import 'package:ShopSphere/features copy/admin/services/admin_services.dart';
+import 'package:ShopSphere/features copy/search/screens/search_screen.dart';
+import 'package:ShopSphere/models/order.dart';
+import 'package:ShopSphere/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
@@ -42,7 +42,7 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
       order: widget.order,
       onSuccess: () {
         setState(() {
-       if(currentStep<3)   currentStep += 1;
+          if (currentStep < 3) currentStep += 1;
         });
       },
     );
@@ -105,7 +105,7 @@ class _OrderDetailScreenState extends State<OrderDetailScreen> {
                             width: 1,
                           ),
                         ),
-                        hintText: 'Search Amazon.in',
+                        hintText: 'Search ShopSphere.in',
                         hintStyle: const TextStyle(
                           fontWeight: FontWeight.w500,
                           fontSize: 17,

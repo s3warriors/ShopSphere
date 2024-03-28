@@ -96,7 +96,7 @@
 //                             width: 1,
 //                           ),
 //                         ),
-//                         hintText: 'Search Amazon.in',
+//                         hintText: 'Search ShopSphere.in',
 //                         hintStyle: const TextStyle(
 //                           fontWeight: FontWeight.w500,
 //                           fontSize: 17,

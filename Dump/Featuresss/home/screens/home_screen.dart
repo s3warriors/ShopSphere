@@ -1,9 +1,9 @@
-// import 'package:amazon_clone/constants/global_variables.dart';
-// import 'package:amazon_clone/Features/home/widgets/address_box.dart';
-// import 'package:amazon_clone/Features/home/widgets/carousel_image.dart';
-// import 'package:amazon_clone/Features/home/widgets/deal_of_day.dart';
-// import 'package:amazon_clone/Features/home/widgets/top_categories.dart';
-// import 'package:amazon_clone/Features/search/screens/search_screen.dart';
+// import 'package:ShopSphere/constants/global_variables.dart';
+// import 'package:ShopSphere/Features/home/widgets/address_box.dart';
+// import 'package:ShopSphere/Features/home/widgets/carousel_image.dart';
+// import 'package:ShopSphere/Features/home/widgets/deal_of_day.dart';
+// import 'package:ShopSphere/Features/home/widgets/top_categories.dart';
+// import 'package:ShopSphere/Features/search/screens/search_screen.dart';
 // import 'package:flutter/material.dart';
 
 // class HomeScreen extends StatefulWidget {
@@ -74,7 +74,7 @@
 //                             width: 1,
 //                           ),
 //                         ),
-//                         hintText: 'Search Amazon.in',
+//                         hintText: 'Search ShopSphere.in',
 //                         hintStyle: const TextStyle(
 //                           fontWeight: FontWeight.w500,
 //                           fontSize: 17,

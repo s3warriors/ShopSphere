@@ -1,7 +1,7 @@
-import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/features copy/admin/screens/analtyics_screen.dart';
-import 'package:amazon_clone/features copy/admin/screens/orders_screen.dart';
-import 'package:amazon_clone/features copy/admin/screens/posts_screen.dart';
+import 'package:ShopSphere/constants/global_variables.dart';
+import 'package:ShopSphere/features copy/admin/screens/analtyics_screen.dart';
+import 'package:ShopSphere/features copy/admin/screens/orders_screen.dart';
+import 'package:ShopSphere/features copy/admin/screens/posts_screen.dart';
 import 'package:flutter/material.dart';
 
 class AdminScreen extends StatefulWidget {
@@ -44,13 +44,22 @@ class _AdminScreenState extends State<AdminScreen> {
             children: [
               Container(
                 alignment: Alignment.topLeft,
-                child: Image.asset(
-                  'assets/images/amazon_in.png',
-                  width: 120,
-                  height: 45,
+                child: 
+              //   Image.asset(
+              //     'assets/images/ShopSphere_in.png',
+              //     width: 120,
+              //     height: 45,
+              //     color: Colors.black,
+              //   ),
+              // ),
+                const Text(
+                'ShopSphere',
+                style: TextStyle(
                   color: Colors.black,
+                  fontWeight: FontWeight.bold,
                 ),
-              ),
+              )),
+              
               const Text(
                 'Admin',
                 style: TextStyle(

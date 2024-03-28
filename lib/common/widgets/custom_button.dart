@@ -1,4 +1,4 @@
-import 'package:amazon_clone/constants/global_variables.dart';
+import 'package:ShopSphere/constants/global_variables.dart';
 import 'package:flutter/material.dart';
 
 class CustomButton extends StatelessWidget {
@@ -15,16 +15,16 @@ class CustomButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      
       child: Text(
         text,
         style: TextStyle(
-          color: color == null ? Colors.white : Colors.black,
+          color: color == null ? Colors.white : Colors.white,
         ),
       ),
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
-        minimumSize: const Size(double.infinity, 50), backgroundColor: GlobalVariables.secondaryColor,
+        minimumSize: const Size(double.infinity, 50),
+        backgroundColor: GlobalVariables.secondaryColor,
       ),
     );
   }

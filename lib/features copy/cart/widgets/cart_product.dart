@@ -1,7 +1,7 @@
-import 'package:amazon_clone/features copy/cart/services/cart_services.dart';
-import 'package:amazon_clone/features copy/product_details/services/product_details_services.dart';
-import 'package:amazon_clone/models/product.dart';
-import 'package:amazon_clone/providers/user_provider.dart';
+import 'package:ShopSphere/features copy/cart/services/cart_services.dart';
+import 'package:ShopSphere/features copy/product_details/services/product_details_services.dart';
+import 'package:ShopSphere/models/product.dart';
+import 'package:ShopSphere/providers/user_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

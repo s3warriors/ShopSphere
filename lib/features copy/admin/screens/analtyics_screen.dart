@@ -1,6 +1,6 @@
-import 'package:amazon_clone/common/widgets/loader.dart';
-import 'package:amazon_clone/features copy/admin/models/sales.dart';
-import 'package:amazon_clone/features copy/admin/services/admin_services.dart';
+import 'package:ShopSphere/common/widgets/loader.dart';
+import 'package:ShopSphere/features copy/admin/models/sales.dart';
+import 'package:ShopSphere/features copy/admin/services/admin_services.dart';
 import 'package:flutter/material.dart';
 
 import '../widgets/category_products_chart.dart';
@@ -35,26 +35,25 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
     return earnings == null || totalSales == null
         ? const Loader()
         : Column(
-          
-          
             children: [
-
-              SizedBox(height: 22,),
+              SizedBox(
+                height: 22,
+              ),
               Container(
                 margin: const EdgeInsets.all(8.0),
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black38, width: 2,
-                  style: BorderStyle.solid ),
-                  borderRadius: BorderRadius.all(Radius.circular(15)),
-                  color: Colors.grey.shade100
-                ),
+                    border: Border.all(
+                        color: Colors.black38,
+                        width: 2,
+                        style: BorderStyle.solid),
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    color: Colors.grey.shade100),
                 padding: const EdgeInsets.all(8.0),
                 child: Center(
                   child: Text(
                     '\$$totalSales',
                     style: const TextStyle(
-                      
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
                     ),
@@ -63,12 +62,7 @@ class _AnalyticsScreenState extends State<AnalyticsScreen> {
               ),
               SizedBox(
                 height: 250,
-                child:
-                 CategoryProductsChart(earnings: earnings
-                  
-              
-              
-                ),
+                child: CategoryProductsChart(earnings: earnings),
               )
             ],
           );

@@ -1,11 +1,11 @@
-import 'package:amazon_clone/constants/utils.dart';
-import 'package:amazon_clone/features copy/address/services/address_services.dart';
+import 'package:ShopSphere/constants/utils.dart';
+import 'package:ShopSphere/features copy/address/services/address_services.dart';
 import 'package:flutter/material.dart';
 import 'package:pay/pay.dart';
 import 'package:provider/provider.dart';
-import 'package:amazon_clone/common/widgets/custom_textfield.dart';
-import 'package:amazon_clone/constants/global_variables.dart';
-import 'package:amazon_clone/providers/user_provider.dart';
+import 'package:ShopSphere/common/widgets/custom_textfield.dart';
+import 'package:ShopSphere/constants/global_variables.dart';
+import 'package:ShopSphere/providers/user_provider.dart';
 
 import '../services/address_services.dart';
 
@@ -68,6 +68,16 @@ class _AddressScreenState extends State<AddressScreen> {
   //   );
   // }
 
+  // void onGooglePaytap(res) {
+   
+  //   if (Provider.of<UserProvider>(context, listen: false)
+  //       .user
+  //       .address
+  //       .isEmpty) {
+  //     addressServices.saveUserAddress(
+  //         context: context, address: addressToBeUsed);
+  //   }
+  // }
   void onGooglePayResult(res) {
     if (Provider.of<UserProvider>(context, listen: false)
         .user
@@ -220,7 +230,7 @@ class _AddressScreenState extends State<AddressScreen> {
                           type: GooglePayButtonType.buy,
                           margin: const EdgeInsets.only(top: 15.0),
                           onPaymentResult: onGooglePayResult,
-                          // onError:onGooglePayResult ,
+                          onError:onGooglePayResult ,
                           onPressed: () => payPressed(address),
                           loadingIndicator: const Center(
                             child: CircularProgressIndicator(),

@@ -1,8 +1,8 @@
-// import 'package:amazon_clone/common/widgets/loader.dart';
-// import 'package:amazon_clone/Features/account/widgets/single_product.dart';
-// import 'package:amazon_clone/Features/admin/screens/add_product_screen.dart';
-// import 'package:amazon_clone/Features/admin/services/admin_services.dart';
-// import 'package:amazon_clone/models/product.dart';
+// import 'package:ShopSphere/common/widgets/loader.dart';
+// import 'package:ShopSphere/Features/account/widgets/single_product.dart';
+// import 'package:ShopSphere/Features/admin/screens/add_product_screen.dart';
+// import 'package:ShopSphere/Features/admin/services/admin_services.dart';
+// import 'package:ShopSphere/models/product.dart';
 // import 'package:flutter/material.dart';
 
 // class PostsScreen extends StatefulWidget {

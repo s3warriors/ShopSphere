@@ -1,7 +1,7 @@
-// import 'package:amazon_clone/common/widgets/loader.dart';
-// import 'package:amazon_clone/Features/home/services/home_services.dart';
-// import 'package:amazon_clone/Features/product_details/screens/product_details_screen.dart';
-// import 'package:amazon_clone/models/product.dart';
+// import 'package:ShopSphere/common/widgets/loader.dart';
+// import 'package:ShopSphere/Features/home/services/home_services.dart';
+// import 'package:ShopSphere/Features/product_details/screens/product_details_screen.dart';
+// import 'package:ShopSphere/models/product.dart';
 // import 'package:flutter/material.dart';
 
 // class DealOfDay extends StatefulWidget {

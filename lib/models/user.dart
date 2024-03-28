@@ -66,13 +66,13 @@ class User {
     List<dynamic>? cart,
   }) {
     return User(
-      id: id ?? "this.id",
-      name: name ?? "this.name",
-      email: email ?? "this.email",
-      password: password ?? "this.password",
-      address: address ?? "this.address",
-      type: type ?? "this.type",
-      token: token ?? "this.token",
+      id: id ?? this.id,
+      name: name ?? this.name,
+      email: email ?? this.email,
+      password: password ?? this.password,
+      address: address ?? this.address,
+      type: type ?? this.type,
+      token: token ?? this.token,
       cart: cart ?? this.cart,
     );
   }
