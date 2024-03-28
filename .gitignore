@@ -44,6 +44,6 @@ app.*.map.json
 /android/app/release
 
 serve/.env
-Dump
+Dump/
 README.md
 screensot.png
